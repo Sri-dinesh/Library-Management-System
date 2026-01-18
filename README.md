@@ -62,3 +62,24 @@ A robust, console-based Java application designed to manage library operations i
 
 ## Requirements
 - Java Development Kit (JDK) 8 or higher.
+
+## How to Run
+
+### Using the Bash Script (Recommended)
+The project is modularized and requires a specific compilation path. Use the provided script to run it effortlessly:
+1. Open a terminal in the project root.
+2. Ensure the script is executable:
+   ```bash
+   chmod +x run.sh
+   ```
+3. Run the project:
+   ```bash
+   ./run.sh
+   ```
+
+### Manual Compilation
+```bash
+mkdir -p out
+javac -d out -sourcepath src/main/java src/main/java/com/library/LibraryManagementSystem.java
+java -cp out com.library.LibraryManagementSystem
+```

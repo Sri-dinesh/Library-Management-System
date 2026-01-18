@@ -1,3 +1,5 @@
 LessEfficient
 *.ser
 *.dat
+
+out/
